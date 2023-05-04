@@ -1,0 +1,26 @@
+﻿version: '3.7'
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: "TodoDBPassword"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - db_data:/var/opt/mssql
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    environment:
+      ConnectionStrings__DefaultConnection: "Server=db;Database=TodoDB;User=sa;Password=TodoDBPassword"
+    ports:
+      - "8080:80"
+
+volumes:
+  db_data:
