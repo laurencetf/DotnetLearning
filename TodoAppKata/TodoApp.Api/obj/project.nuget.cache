@@ -1,25 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "Gr+bfUbFIgiERadZ0L9qWqMtSjNTJb0gtL0r9kO1zMn41u/42hrZ50g6/+fvvsEVqFeCkLIwa8hqI5Ji/AGa5A==",
+  "dgSpecHash": "UcgcEhK5pQ9UO30kOJ93a/hKY0/KpwhS9oXP2H2j9uMqgUAbcjW36FapRV+fJNhC4dek0TRDuRwB9UjorRF3gA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fabien.laurencet\\Personnel\\DotnetLearning\\TodoAppKata\\TodoApp.Api\\TodoApp.Api.csproj",
+  "projectFilePath": "C:\\Users\\rubin\\OneDrive - Alltech Nouvelle Aquitaine\\TUTOS\\DotnetLearning\\TodoAppKata\\TodoApp.Api\\TodoApp.Api.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\fabien.laurencet\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
-    "C:\\Users\\fabien.laurencet\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\fabien.laurencet\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "C:\\Users\\fabien.laurencet\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\fabien.laurencet\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\fabien.laurencet\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "C:\\Users\\fabien.laurencet\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "C:\\Users\\fabien.laurencet\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "C:\\Users\\fabien.laurencet\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+    "C:\\Users\\rubin\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\rubin\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\rubin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\rubin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\rubin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\rubin\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\rubin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\rubin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\rubin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1803",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://tfsdropserver.cdbdx.biz:8082/repository/NuGet-NetCore-Official/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
-    }
-  ]
+  "logs": []
 }

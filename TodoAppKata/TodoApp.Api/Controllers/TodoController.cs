@@ -1,3 +1,4 @@
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TodoApp.Api.Controllers;
@@ -8,28 +9,21 @@ public class TodoController : ControllerBase
 {
 
     private readonly ILogger<TodoController> _logger;
+    private readonly ISender _mediator;
 
-    public TodoController(ILogger<TodoController> logger)
+    public TodoController(ILogger<TodoController> logger, ISender mediator)
     {
         _logger = logger;
+        _mediator = mediator;
     }
 
     [HttpGet(Name = "GetTodo")]
-    public IEnumerable<WeatherForecast> Get([FromQuery] TodoQueryParam todoQueryParam)
+    public async Task<ActionResult> Get([FromQuery] TodoQuery todoQueryParam)
     {
-        return Enumerable
-            .Range(1, 5)
-            .Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55)
-            })
-            .ToArray();
+        var result = await _mediator.Send(todoQueryParam);
+        if (result?.Any() != true)
+            return NotFound();
+        return Ok(result);
     }
-}
 
-public class TodoQueryParam
-{
-
-    string? Status;
 }
