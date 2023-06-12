@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxesStacksArrangement", "BoxesStacksArrangement\BoxesStacksArrangement.csproj", "{84455E8C-8056-4997-A097-F7ED0F7CCA78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxesStacksArrangement.Tests", "BoxesStacksArrangement.Tests\BoxesStacksArrangement.Tests.csproj", "{A2D5F86A-6172-4DE7-98D2-7C94BB14B8FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84455E8C-8056-4997-A097-F7ED0F7CCA78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84455E8C-8056-4997-A097-F7ED0F7CCA78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84455E8C-8056-4997-A097-F7ED0F7CCA78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84455E8C-8056-4997-A097-F7ED0F7CCA78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2D5F86A-6172-4DE7-98D2-7C94BB14B8FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2D5F86A-6172-4DE7-98D2-7C94BB14B8FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2D5F86A-6172-4DE7-98D2-7C94BB14B8FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2D5F86A-6172-4DE7-98D2-7C94BB14B8FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
