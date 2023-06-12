@@ -1,0 +1,12 @@
+C:\Users\fabie\source\repos\DotnetLearning\TodoAppKata\BoxesStackArrangement\BoxesStacksArrangement\obj\Debug\net7.0\BoxesStacksArrangement.csproj.AssemblyReference.cache
+C:\Users\fabie\source\repos\DotnetLearning\TodoAppKata\BoxesStackArrangement\BoxesStacksArrangement\obj\Debug\net7.0\BoxesStacksArrangement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fabie\source\repos\DotnetLearning\TodoAppKata\BoxesStackArrangement\BoxesStacksArrangement\obj\Debug\net7.0\BoxesStacksArrangement.AssemblyInfoInputs.cache
+C:\Users\fabie\source\repos\DotnetLearning\TodoAppKata\BoxesStackArrangement\BoxesStacksArrangement\obj\Debug\net7.0\BoxesStacksArrangement.AssemblyInfo.cs
+C:\Users\fabie\source\repos\DotnetLearning\TodoAppKata\BoxesStackArrangement\BoxesStacksArrangement\obj\Debug\net7.0\BoxesStacksArrangement.csproj.CoreCompileInputs.cache
+C:\Users\fabie\source\repos\DotnetLearning\TodoAppKata\BoxesStackArrangement\BoxesStacksArrangement\bin\Debug\net7.0\BoxesStacksArrangement.deps.json
+C:\Users\fabie\source\repos\DotnetLearning\TodoAppKata\BoxesStackArrangement\BoxesStacksArrangement\bin\Debug\net7.0\BoxesStacksArrangement.dll
+C:\Users\fabie\source\repos\DotnetLearning\TodoAppKata\BoxesStackArrangement\BoxesStacksArrangement\bin\Debug\net7.0\BoxesStacksArrangement.pdb
+C:\Users\fabie\source\repos\DotnetLearning\TodoAppKata\BoxesStackArrangement\BoxesStacksArrangement\obj\Debug\net7.0\BoxesStacksArrangement.dll
+C:\Users\fabie\source\repos\DotnetLearning\TodoAppKata\BoxesStackArrangement\BoxesStacksArrangement\obj\Debug\net7.0\refint\BoxesStacksArrangement.dll
+C:\Users\fabie\source\repos\DotnetLearning\TodoAppKata\BoxesStackArrangement\BoxesStacksArrangement\obj\Debug\net7.0\BoxesStacksArrangement.pdb
+C:\Users\fabie\source\repos\DotnetLearning\TodoAppKata\BoxesStackArrangement\BoxesStacksArrangement\obj\Debug\net7.0\ref\BoxesStacksArrangement.dll
