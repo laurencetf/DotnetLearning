@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fabie\\source\\repos\\DotnetLearning\\TodoAppKata\\BoxesStackArrangement\\BoxesStacksArrangement\\BoxesStacksArrangement.csproj",
+      "projectUniqueName": "C:\\Users\\fabie\\source\\repos\\DotnetLearning\\BoxesStackArrangement\\BoxesStacksArrangement\\BoxesStacksArrangement.csproj",
       "projectName": "BoxesStacksArrangement",
-      "projectPath": "C:\\Users\\fabie\\source\\repos\\DotnetLearning\\TodoAppKata\\BoxesStackArrangement\\BoxesStacksArrangement\\BoxesStacksArrangement.csproj",
+      "projectPath": "C:\\Users\\fabie\\source\\repos\\DotnetLearning\\BoxesStackArrangement\\BoxesStacksArrangement\\BoxesStacksArrangement.csproj",
       "packagesPath": "C:\\Users\\fabie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fabie\\source\\repos\\DotnetLearning\\TodoAppKata\\BoxesStackArrangement\\BoxesStacksArrangement\\obj\\",
+      "outputPath": "C:\\Users\\fabie\\source\\repos\\DotnetLearning\\BoxesStackArrangement\\BoxesStacksArrangement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
