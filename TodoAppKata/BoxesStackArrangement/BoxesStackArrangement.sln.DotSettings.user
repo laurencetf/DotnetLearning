@@ -1,0 +1,12 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=81d3bf1f_002D5ec2_002D4254_002Dbdad_002D8bf4edfc27a5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="WhenProvidingEmptyBoxesList_ShouldReturnTrue #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\fabie\source\repos\DotnetLearning\TodoAppKata\BoxesStackArrangement\BoxesStacksArrangement.Tests" Presentation="&amp;lt;BoxesStacksArrangement.Tests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f67d7024_002D71ae_002D488e_002D9997_002De6c06faf51c1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WhenProvidingEmptyBoxesList_ShouldReturnTrue" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::A2D5F86A-6172-4DE7-98D2-7C94BB14B8FE::net7.0::BoxesStacksArrangement.Tests.BoxesStacksArrangerTests.WhenProvidingEmptyBoxesList_ShouldReturnTrue&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::A2D5F86A-6172-4DE7-98D2-7C94BB14B8FE::net7.0::BoxesStacksArrangement.Tests.BoxesStacksArrangerTests.WhenProvidingBoxesListWithTwoStacksOfOneBox_ShouldReturnTrue&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::A2D5F86A-6172-4DE7-98D2-7C94BB14B8FE::net7.0::BoxesStacksArrangement.Tests.BoxesStacksArrangerTests.WhenProvidingBoxesListWithNStacksOfOneBox_ShouldReturnTrue&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::A2D5F86A-6172-4DE7-98D2-7C94BB14B8FE::net7.0::BoxesStacksArrangement.Tests.BoxesStacksArrangerTests.WhenProvidingBoxesListWithEmptyStack_ShouldFillItAndReturnTrue&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
