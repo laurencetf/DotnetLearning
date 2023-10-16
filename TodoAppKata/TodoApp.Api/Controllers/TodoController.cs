@@ -26,6 +26,11 @@ public class TodoController : ControllerBase
             })
             .ToArray();
     }
+
+    public object Should()
+    {
+        throw new NotImplementedException();
+    }
 }
 
 public class TodoQueryParam
