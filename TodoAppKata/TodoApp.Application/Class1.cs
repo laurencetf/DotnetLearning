@@ -1,6 +1,6 @@
 ﻿namespace TodoApp.Application;
 
-public class Class1
+public class Get
 {
     public String Michel { get; set; }
 }
