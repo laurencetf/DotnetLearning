@@ -1,8 +1,9 @@
-﻿using DotnetBasics.API.Features.Bowling.Responses;
+﻿using DotnetBasics.API.Features.Bowling.Requests;
+using DotnetBasics.API.Features.Bowling.Responses;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DotnetBasics.API.Bowling.Feature;
+namespace DotnetBasics.API.Bowling.Features;
 
 [ApiController]
 [Route("[controller]")]
@@ -13,10 +14,10 @@ public class BowlingController : ControllerBase
     //Scope (public, internal, protected, private) modificateur (static) accessibilité (readonly, virtual)
     private readonly IMediator _mediator;
 
-    //Paramètre injecté par le noyau dotnet après instructiond dans le program.cs
+    //Paramètre injecté par le noyau dotnet après instruction dans le program.cs
     public BowlingController(IMediator mediator)
     {
-        //Injuection de dépendances 5ème principe SOLID (Dependancy Inversion)
+        //Injection de dépendances 5ème principe SOLID (Dependancy Inversion)
         _mediator = mediator;
     }
     

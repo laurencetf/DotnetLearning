@@ -1,7 +1,8 @@
+using DotnetBasics.API.Features.Bowling.Requests.Enum;
 using DotnetBasics.API.Features.Bowling.Responses;
 using MediatR;
 
-namespace DotnetBasics.API.Bowling.Feature;
+namespace DotnetBasics.API.Features.Bowling.Requests;
 
 public class GetBowlingThrowsQuery : IRequest<BowlingThrowsPaginatedViewModel> {
     public int PageIndex { get; set; }

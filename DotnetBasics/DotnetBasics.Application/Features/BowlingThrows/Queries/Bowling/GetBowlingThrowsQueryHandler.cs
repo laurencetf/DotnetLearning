@@ -1,4 +1,4 @@
-﻿using DotnetBasics.API.Bowling.Feature;
+﻿using DotnetBasics.API.Features.Bowling.Requests;
 using DotnetBasics.API.Features.Bowling.Responses;
 using DotnetBasics.Application.Abstraction.Interfaces;
 using DotnetBasics.Application.Features.BowlingThrows.Mappers;

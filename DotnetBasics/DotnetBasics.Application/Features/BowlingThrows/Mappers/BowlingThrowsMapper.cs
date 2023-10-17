@@ -1,4 +1,4 @@
-using DotnetBasics.API.Bowling.Feature;
+using DotnetBasics.API.Features.Bowling.Requests;
 using DotnetBasics.API.Features.Bowling.Responses;
 using DotnetBasics.Application.Features.BowlingThrows.Models;
 using MongoDB.Driver;
@@ -7,8 +7,11 @@ namespace DotnetBasics.Application.Features.BowlingThrows.Mappers;
 
 public static class BowlingThrowsMapper
 {
-    public static BowlingThrowsPaginatedViewModel ToPaginatedViewModel(this IEnumerable<BowlingThrow> bowlingThrows, int pageSize, int pageIndex)
-    {
+    public static BowlingThrowsPaginatedViewModel ToPaginatedViewModel(
+        this IEnumerable<BowlingThrow> bowlingThrows,
+        int pageSize,
+        int pageIndex
+    ) {
         return new BowlingThrowsPaginatedViewModel
         {
             PageSize = pageSize,

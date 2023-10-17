@@ -1,5 +1,3 @@
-using DotnetBasics.API.Bowling.Feature;
-
 namespace DotnetBasics.Application;
 
 public class BowlingThrowDto
