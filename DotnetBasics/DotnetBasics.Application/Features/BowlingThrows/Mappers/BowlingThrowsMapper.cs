@@ -1,4 +1,5 @@
 using DotnetBasics.API.Features.Bowling.Requests;
+using DotnetBasics.API.Features.Bowling.Requests.Enum;
 using DotnetBasics.API.Features.Bowling.Responses;
 using DotnetBasics.Application.Features.BowlingThrows.Models;
 using MongoDB.Driver;
@@ -26,6 +27,21 @@ public static class BowlingThrowsMapper
                     bt.Player.LastName
                 )   
             ))
+        };
+    }
+
+    public static BowlingThrowDto ToBowlingThrowCreationDto(
+        this PostBowlingThrowsCommand bowlingThrowsCommand
+    ) {
+        return new BowlingThrowDto {
+            Id = Guid.NewGuid(),
+            Date = DateTime.UtcNow,
+            Pins = bowlingThrowsCommand.Pins,
+            Player = new PlayerDto {
+                FirstName = bowlingThrowsCommand.PlayerName
+            },
+            Status = ThrowStatus.Thrown.ToString(),
+            CreationDate = DateTime.UtcNow
         };
     }
 

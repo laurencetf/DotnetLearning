@@ -10,4 +10,8 @@ public interface IBowlingThrowsRepository
         int pageSize,
         CancellationToken cancellationToken
     );
+
+    public Task UpsertBowlingThrow(
+        BowlingThrowDto bowlingThrowDto
+    );
 }

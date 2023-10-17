@@ -31,7 +31,7 @@ public class BowlingController : ControllerBase
             //Implémentation
             //var type dynamic assigné à l'exécution
             var bowlingThrows = await _mediator.Send(queryParams, cancellationToken)
-                //Facultatif sur les évènements asynchrones (permet d'éviter de crééer un objet Awaitable) peut améliorer les perfs
+                //Facultatif sur les évènements asynchrones (permet d'éviter de créer un objet Awaitable) peut améliorer les perfs
                 .ConfigureAwait(false);
             
             return bowlingThrows;
@@ -39,6 +39,19 @@ public class BowlingController : ControllerBase
         //Exception c'est la classe mère de toutes les Exceptions
         catch (Exception e)
         {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+
+    [HttpPost]
+    public async Task<ActionResult> PostBowlingThrows([FromBody] PostBowlingThrowsCommand request, CancellationToken cancellationToken)
+    {
+        try {
+            var bowlingThrow = await _mediator.Send(request, cancellationToken).ConfigureAwait(false);
+
+            return Created("", bowlingThrow);
+        } catch (Exception e) {
             Console.WriteLine(e);
             throw;
         }

@@ -13,6 +13,5 @@ public record BowlingThrow(
             bowlingThrow.Pins,
             Player.FromDto(bowlingThrow.Player)
         );
-
     }
 }
