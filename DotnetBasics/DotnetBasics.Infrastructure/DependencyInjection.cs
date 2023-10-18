@@ -1,5 +1,5 @@
-﻿using DotnetBasics.Infrastructure.Repositories;
-using Microsoft.Extensions.Configuration;
+﻿using DotnetBasics.Application.Features.BowlingThrows.Abstraction.Interfaces;
+using DotnetBasics.Infrastructure.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DotnetBasics.Infrastructure;
@@ -7,9 +7,10 @@ namespace DotnetBasics.Infrastructure;
 public static class DependencyInjection
 {
     public static IServiceCollection ConfigureInfrastructureServices(
-        this IServiceCollection services,
-        IConfiguration configuration
+        this IServiceCollection services
     ) {
-        return services.AddSingleton<BowlingRepository>();
+        services.AddScoped<IBowlingThrowsRepository, BowlingRepository>();
+        
+        return services;
     }
 }

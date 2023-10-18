@@ -1,5 +1,6 @@
 ﻿using DotnetBasics.Application.Features.BowlingThrows.Abstraction.Interfaces;
 using DotnetBasics.Application.Features.BowlingThrows.Models;
+using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
 namespace DotnetBasics.Infrastructure.Repositories;
@@ -9,9 +10,11 @@ public class BowlingRepository : IBowlingThrowsRepository
     
     private readonly IMongoCollection<BowlingThrow> _collection;
 
-    public BowlingRepository(IMongoCollection<BowlingThrow> collection)
+    public BowlingRepository(IOptions<MongoDBSettings> mongoDBSettings)
     {
-        _collection = collection;
+        var client = new MongoClient(mongoDBSettings.Value.ConnectionURI);
+        IMongoDatabase database = client.GetDatabase(mongoDBSettings.Value.DatabaseName);
+        _collection = database.GetCollection<BowlingThrow>(mongoDBSettings.Value.CollectionName);
     }
 
 
