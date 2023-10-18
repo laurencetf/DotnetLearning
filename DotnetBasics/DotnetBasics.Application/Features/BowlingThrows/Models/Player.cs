@@ -1,17 +1,7 @@
 namespace DotnetBasics.Application.Features.BowlingThrows.Models;
 
-public record Player
-(
-    string FirstName,
-    string LastName
-)
+public class Player
 {
-    public static Player FromDto(PlayerDto player)
-    {
-        return new Player
-        (
-            player.FirstName,
-            player.LastName
-        );
-    }
+    public string FirstName { get; set; }
+    public string? LastName { get; set; }
 }

@@ -1,5 +1,6 @@
-﻿using DotnetBasics.API.Features.Bowling.Requests;
-using DotnetBasics.API.Features.Bowling.Responses;
+﻿using DotnetBasics.Application.Features.BowlingThrows.Commands;
+using DotnetBasics.Application.Features.BowlingThrows.Models;
+using DotnetBasics.Application.Features.BowlingThrows.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,7 +25,7 @@ public class BowlingController : ControllerBase
     //Annotation corresponadant au verbe http 
     [HttpGet]
     //async toutes les fonctions asynchrone doivent avoir le modificateur async et retourner une Task
-    public async Task<BowlingThrowsPaginatedViewModel> GetBowlingThrows([FromQuery] GetBowlingThrowsQuery queryParams, CancellationToken cancellationToken)
+    public async Task<BowlingThrowList> GetBowlingThrows([FromQuery] GetBowlingThrowsQuery queryParams, CancellationToken cancellationToken)
     {
         try
         {

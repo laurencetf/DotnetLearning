@@ -1,5 +1,5 @@
-﻿using DotnetBasics.Application;
-using DotnetBasics.Application.Abstraction.Interfaces;
+﻿using DotnetBasics.Application.Features.BowlingThrows.Abstraction.Interfaces;
+using DotnetBasics.Application.Features.BowlingThrows.Models;
 using MongoDB.Driver;
 
 namespace DotnetBasics.Infrastructure.Repositories;
@@ -7,16 +7,16 @@ namespace DotnetBasics.Infrastructure.Repositories;
 public class BowlingRepository : IBowlingThrowsRepository
 {
     
-    private readonly IMongoCollection<BowlingThrowDto> _collection;
+    private readonly IMongoCollection<BowlingThrow> _collection;
 
-    public BowlingRepository(IMongoCollection<BowlingThrowDto> collection)
+    public BowlingRepository(IMongoCollection<BowlingThrow> collection)
     {
         _collection = collection;
     }
 
 
-    public async Task<IEnumerable<BowlingThrowDto>> GetBowlingThrows(
-        FilterDefinition<BowlingThrowDto> filter,
+    public async Task<IEnumerable<BowlingThrow>> GetBowlingThrows(
+        FilterDefinition<BowlingThrow> filter,
         int pageIndex,
         int pageSize,
         CancellationToken cancellationToken
@@ -35,12 +35,12 @@ public class BowlingRepository : IBowlingThrowsRepository
                 .ToListAsync(cancellationToken);
     }
 
-    public async Task UpsertBowlingThrow(BowlingThrowDto bowlingThrowDto)
+    public async Task UpsertBowlingThrow(BowlingThrow bowlingThrowDto)
     {
-        var builder = Builders<BowlingThrowDto>.Update;
-        var updateDefaultDefinition = Builders<BowlingThrowDto>.Update;
+        var builder = Builders<BowlingThrow>.Update;
+        var updateDefaultDefinition = Builders<BowlingThrow>.Update;
 
-        var updates = new List<UpdateDefinition<BowlingThrowDto>>();
+        var updates = new List<UpdateDefinition<BowlingThrow>>();
 
         var updateOptions = new UpdateOptions { IsUpsert = true };
         updates.Add(

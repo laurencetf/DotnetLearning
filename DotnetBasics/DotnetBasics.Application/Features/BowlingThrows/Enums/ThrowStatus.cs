@@ -1,4 +1,4 @@
-namespace DotnetBasics.API.Features.Bowling.Requests.Enum;
+namespace DotnetBasics.Application.Features.BowlingThrows.Enums;
 
 // Injecter dans le program.cs un converter StringToEnum pour serialiser implicitement en json les enums 
 public enum ThrowStatus

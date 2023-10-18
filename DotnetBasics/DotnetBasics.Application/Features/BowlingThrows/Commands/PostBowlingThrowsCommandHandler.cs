@@ -1,9 +1,8 @@
-﻿using DotnetBasics.API.Features.Bowling.Requests;
-using DotnetBasics.Application.Abstraction.Interfaces;
+﻿using DotnetBasics.Application.Features.BowlingThrows.Abstraction.Interfaces;
 using DotnetBasics.Application.Features.BowlingThrows.Mappers;
 using MediatR;
 
-namespace DotnetBasics.Application;
+namespace DotnetBasics.Application.Features.BowlingThrows.Commands;
 
 public class PostBowlingThrowsCommandHandler : IRequestHandler<PostBowlingThrowsCommand, bool>
 {
@@ -18,9 +17,9 @@ public class PostBowlingThrowsCommandHandler : IRequestHandler<PostBowlingThrows
         PostBowlingThrowsCommand command,
         CancellationToken cancellationToken
     ) {
-        var bowlingThrowDto = BowlingThrowsMapper.ToBowlingThrowCreationDto(command);
+        var bowlingThrow = BowlingThrowsMapper.ToBowlingThrowCreation(command);
 
-        await _bowlingThrowsRepository.UpsertBowlingThrow(bowlingThrowDto);
+        await _bowlingThrowsRepository.UpsertBowlingThrow(bowlingThrow);
 
         return true;
     }

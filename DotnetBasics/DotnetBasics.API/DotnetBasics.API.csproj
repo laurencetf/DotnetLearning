@@ -15,5 +15,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\DotnetBasics.Infrastructure\DotnetBasics.Infrastructure.csproj" />
+      <ProjectReference Include="..\DotnetBasics.Application\DotnetBasics.Application.csproj" />
     </ItemGroup>
 </Project>

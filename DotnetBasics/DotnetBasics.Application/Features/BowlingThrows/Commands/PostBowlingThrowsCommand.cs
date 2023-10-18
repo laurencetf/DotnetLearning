@@ -1,6 +1,6 @@
-﻿using MediatR;
+﻿namespace DotnetBasics.Application.Features.BowlingThrows.Commands;
 
-namespace DotnetBasics.API.Features.Bowling.Requests;
+using MediatR;
 
 public record PostBowlingThrowsCommand
 (

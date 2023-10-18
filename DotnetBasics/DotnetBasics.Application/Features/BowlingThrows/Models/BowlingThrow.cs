@@ -1,17 +1,13 @@
+using DotnetBasics.Application.Features.BowlingThrows.Enums;
+
 namespace DotnetBasics.Application.Features.BowlingThrows.Models;
 
-public record BowlingThrow(
-    Guid Id,
-    int Pins,
-    Player Player
-)
+public class BowlingThrow
 {
-    public static BowlingThrow FromDto(BowlingThrowDto bowlingThrow)
-    {
-        return new BowlingThrow(
-            bowlingThrow.Id,
-            bowlingThrow.Pins,
-            Player.FromDto(bowlingThrow.Player)
-        );
-    }
+    public Guid Id { get; set; }
+    public DateTime Date { get; set; }
+    public int Pins { get; set; }
+    public Player Player { get; set; }
+    public ThrowStatus Status { get; set; }
+    public DateTime CreationDate { get; set; }
 }
