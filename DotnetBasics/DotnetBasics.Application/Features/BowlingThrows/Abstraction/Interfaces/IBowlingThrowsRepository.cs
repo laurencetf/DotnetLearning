@@ -1,7 +1,7 @@
+namespace DotnetBasics.Application.Features.BowlingThrows.Abstraction.Interfaces;
+
 using DotnetBasics.Application.Features.BowlingThrows.Models;
 using MongoDB.Driver;
-
-namespace DotnetBasics.Application.Features.BowlingThrows.Abstraction.Interfaces;
 
 public interface IBowlingThrowsRepository
 {
