@@ -25,8 +25,10 @@ public class BowlingController : ControllerBase
     //Annotation corresponadant au verbe http 
     [HttpGet]
     //async toutes les fonctions asynchrone doivent avoir le modificateur async et retourner une Task
-    public async Task<BowlingThrowList> GetBowlingThrows([FromQuery] GetBowlingThrowsQuery queryParams, CancellationToken cancellationToken)
-    {
+    public async Task<BowlingThrowList> GetBowlingThrows(
+        [FromQuery] GetBowlingThrowsQuery queryParams, 
+        CancellationToken cancellationToken
+    ) {
         try
         {
             //Implémentation

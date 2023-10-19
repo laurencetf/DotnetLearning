@@ -12,9 +12,9 @@ public class BowlingRepository : IBowlingThrowsRepository
 
     public BowlingRepository(IOptions<MongoDBSettings> mongoDBSettings)
     {
-        var client = new MongoClient(mongoDBSettings.Value.ConnectionURI);
-        IMongoDatabase database = client.GetDatabase(mongoDBSettings.Value.DatabaseName);
-        _collection = database.GetCollection<BowlingThrow>(mongoDBSettings.Value.CollectionName);
+        _collection = new MongoClient(mongoDBSettings.Value.ConnectionURI)
+            .GetDatabase(mongoDBSettings.Value.DatabaseName)
+            .GetCollection<BowlingThrow>(mongoDBSettings.Value.CollectionName);
     }
 
 

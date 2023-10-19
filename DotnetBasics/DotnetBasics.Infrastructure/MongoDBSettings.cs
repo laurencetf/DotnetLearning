@@ -1,4 +1,5 @@
 namespace DotnetBasics.Infrastructure;
+
 public class MongoDBSettings
 {
     public string ConnectionURI { get; set; } = null!;
