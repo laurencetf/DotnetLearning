@@ -17,7 +17,6 @@ public class BowlingRepository : IBowlingThrowsRepository
             .GetCollection<BowlingThrow>(mongoDBSettings.Value.CollectionName);
     }
 
-
     public async Task<IEnumerable<BowlingThrow>> GetBowlingThrows(
         FilterDefinition<BowlingThrow> filter,
         int pageIndex,
@@ -56,6 +55,8 @@ public class BowlingRepository : IBowlingThrowsRepository
                 .Set(p => p.Player, bowlingThrowDto.Player)
         );
 
-        await _collection.UpdateOneAsync(p => p.Id == bowlingThrowDto.Id, builder.Combine(updates), updateOptions).ConfigureAwait(false);
+        await _collection
+            .UpdateOneAsync(p => p.Id == bowlingThrowDto.Id, builder.Combine(updates), updateOptions)
+            .ConfigureAwait(false);
     }
 }

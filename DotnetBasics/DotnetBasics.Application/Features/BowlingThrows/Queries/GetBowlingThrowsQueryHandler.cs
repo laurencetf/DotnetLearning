@@ -21,7 +21,7 @@ public class GetBowlingThrowsQueryHandler : IRequestHandler<GetBowlingThrowsQuer
     ) {
         //Mapping d'entrée
         var databaseFilter = request.ToDatabaseFilter();
-        
+
         //Appel au repository
         var bowlingThrows = await _bowlingThrowsRepository.GetBowlingThrows(
             databaseFilter, 
@@ -29,7 +29,7 @@ public class GetBowlingThrowsQueryHandler : IRequestHandler<GetBowlingThrowsQuer
             request.PageSize, 
             cancellationToken
         );
-        
+
         //Mapping de sortie
         return BowlingThrowsMapper.ToBowlingThrowCollection(bowlingThrows, request);
     }
